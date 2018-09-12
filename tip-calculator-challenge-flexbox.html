@@ -2,21 +2,64 @@
 <html>
   <head>
     <title></title>
+
+<style media="screen">
+
+    .container{
+        /* height = 100% */
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .results{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    .inputs{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-size: 12px
+    }
+    /* body, html {
+        height: 300px
+    } */
+    input{
+        height: 50px;
+        border-radius: 15px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+
+</style>
+
   </head>
   <body>
    <div class = "container">
     <p>
+
+        <div class= "inputs">
+
       <label for="amount">Bill</label>
-      <input id="amount" type="number" value="0.00">
+      <input id="amount" type="number" value="$0.00">
     </p>
 
     <p>
-      <label for="percent">Tip %</label>
+      <label for="percent">Tip %</label> <br>
       <input id="percent" type="number" value="15">
     </p>
-
+</div>
     <button id="calculate">Calculate</button>
 
+    <div class= "results">
     <p>
       <span>Tip:</span>
       <span id="tip">0.00</span>
@@ -26,6 +69,7 @@
       <span>Total:</span>
       <span id="total">0.00</span>
     </p>
+</div>
     <div>
   </body>
 </html>
