@@ -1,0 +1,77 @@
+
+<head>
+    <style>
+label{
+    line-height: 30px;
+    font-family: fantasy;
+}
+    </style>
+</header>
+
+ <h1>Burger <br> King</h1>
+
+
+
+ <!doctype html>
+ <html>
+
+<body>
+<form action="/your/api" method="">
+
+  <!-- use a p or other block tag to organize form elements onto lines -->
+  <p>
+    <label>Name: </label>
+    <input name="name" type="text" placeholder="Your name">
+    <br>
+
+  <label>Email: </label>
+  <input name="email" type="email" placeholder="you@site.com">
+  <br>
+  <label>Pet Count: </label>
+  <input name="pets" type="number">
+  <br>
+  <label>Birthday: </label>
+  <input name="birthday">
+  <br>
+  <label>Prefix: </label>
+  <select name="prefix">
+    <option>Mr</option>
+    <option>Mrs</option>
+    <option>Ms</option>
+    <option>Sir</option>
+    <option>Madam</option>
+    <option>Dr</option>
+    <option>None</option>
+  </select>
+</p>
+
+  <!-- Associate labels with form elements with for and id -->
+  <label>Role:</label>
+  <br>
+  <input id="radio-admin" type="radio" name="role" value="Admin"/>
+  <label for="radio-admin">Admin</label>
+  <br>
+  <input type="radio" name="role" value="Editor" />
+  <label>Editor</label>
+  <br>
+  <input type="radio" name="role" value="Contributor" />
+  <label>Contributor</label>
+  <br>
+  <input type="checkbox" name="public">
+  <label>Public</label>
+  <br>
+  <label>Bio</label>
+  <br>
+  <textarea name="bio"></textarea>
+  <br>
+  <label>Upload Image</label>
+  <input name="image" type="file">
+  <br>
+  <label>Self Destruct</label>
+  <input name="self-destruct" type="check">
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+ </html>
